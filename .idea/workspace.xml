@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f72fe98c-da58-4ba4-bdab-daa90888a77b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projeto_POO_Lab.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Consultorio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dentista.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Funcionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Medico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Secretaria.java" afterDir="false" />
+    <list default="true" id="f72fe98c-da58-4ba4-bdab-daa90888a77b" name="Changes" comment="primeiro commit, preparação do ambiente">
+      <change afterPath="$PROJECT_DIR$/src/Paciente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dentista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dentista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funcionario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +24,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="a3dbd686-ef3b-4fb5-9050-b6150b22c24f" />
+        <option name="url" value="https://github.com/LuccaRS/Java.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectId" id="2YccdxkS5SiRpBqNDBGs8Njni8x" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -55,6 +60,14 @@
       <option name="presentableId" value="Default" />
       <updated>1700828402670</updated>
     </task>
+    <task id="LOCAL-00001" summary="primeiro commit, preparação do ambiente">
+      <created>1700852339316</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700852339316</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -67,6 +80,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="primeiro commit, preparação do ambiente" />
+    <option name="LAST_COMMIT_MESSAGE" value="primeiro commit, preparação do ambiente" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
