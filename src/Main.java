@@ -3,12 +3,15 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+        // Criacao dos objetos presentes no consultorio
         ArrayList<Paciente> pacientes = new ArrayList<>();
         ArrayList<Dentista> dentistas = new ArrayList<>();
         ArrayList<Medico> medicos = new ArrayList<>();
         ArrayList<Secretaria> secretarias = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
 
+        // variavel para controle de dados
         boolean manter  = true;
 
         while (manter) {
@@ -23,6 +26,7 @@ public class Main {
             System.out.println("8 -> Listar Médicos");
             System.out.println("9 -> Sair do menu da clínica");
 
+            // var. para entrada de dados
             System.out.print("Escolha uma opção: ");
             int op = scanner.nextInt();
 

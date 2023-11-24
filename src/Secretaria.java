@@ -8,6 +8,7 @@ public class Secretaria extends Funcionario {
 
     @Override
     public void realizarFuncao() {
+        // Funcao de marcar consulta
 
     }
 }
