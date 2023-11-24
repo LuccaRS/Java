@@ -17,4 +17,6 @@ public abstract class Funcionario {
         this.idade = idade;
         this.id = id;
     }
+
+    public abstract void realizarFuncao();
 }
