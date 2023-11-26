@@ -43,22 +43,23 @@ public class Main {
 
                     break;
                 case 3:
-
+                    Medico.cadastrarDentista(medicos,scanner);
                     break;
                 case 4:
-
+                    Secretaria.cadastrarSecretaria(secretarias,scanner);
                     break;
                 case 5:
 
                     break;
                 case 6:
-
+                    Paciente.listarPacientes(pacientes);
                     break;
                 case 7:
+                    Dentista.listarDentista(dentistas);
 
                     break;
                 case 8:
-
+                    Medico.listarMedico(medicos);
                     break;
                 case 9:
                     // saída do progra

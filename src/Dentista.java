@@ -32,7 +32,7 @@ public class Dentista extends Funcionario{
         System.out.print("Identificação: ");
         int id = scanner.nextInt();
 
-        System.out.print("Identificação: ");
+        System.out.print("Especialidade: ");
         String especialidade = scanner.nextLine();
 
         Dentista dentista = new Dentista(nome, cpf, telefone, idade, id, especialidade);

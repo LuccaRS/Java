@@ -23,7 +23,7 @@ public class Medico extends Funcionario {
 
     }
 
-    public static void cadastrarDentista(Scanner scanner) {
+    public static void cadastrarDentista(ArrayList<Medico> medicos, Scanner scanner) {
         System.out.println("Cadastro de Médico:");
 
         System.out.print("CPF: ");
