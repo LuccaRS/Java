@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f72fe98c-da58-4ba4-bdab-daa90888a77b" name="Changes" comment="finalmente conseguido implementara lógico de cadastro com array list" />
+    <list default="true" id="f72fe98c-da58-4ba4-bdab-daa90888a77b" name="Changes" comment="ajustes a mais de cadastros, finalizar o restante">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Consulta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Consulta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dentista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dentista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funcionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Medico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Medico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Paciente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Secretaria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Secretaria.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,14 +54,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Lucca/IdeaProjects/AV2_Lucca_Ribeiro_1949",
-    "onboarding.tips.debug.path": "C:/Users/Lucca/IdeaProjects/Projeto_POO/Projeto_POO_Lab/src/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lucca/IdeaProjects/AV2_Lucca_Ribeiro_1949&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Lucca/IdeaProjects/Projeto_POO/Projeto_POO_Lab/src/Main.java&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -97,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701022731749</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="ajustes a mais de cadastros, finalizar o restante">
+      <created>1701023611007</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701023611007</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,6 +132,7 @@
     <MESSAGE value="criacao do menu e algumas implementações" />
     <MESSAGE value="outras implementações de listar dentista" />
     <MESSAGE value="finalmente conseguido implementara lógico de cadastro com array list" />
-    <option name="LAST_COMMIT_MESSAGE" value="finalmente conseguido implementara lógico de cadastro com array list" />
+    <MESSAGE value="ajustes a mais de cadastros, finalizar o restante" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajustes a mais de cadastros, finalizar o restante" />
   </component>
 </project>

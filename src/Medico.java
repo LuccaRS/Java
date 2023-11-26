@@ -23,8 +23,11 @@ public class Medico extends Funcionario {
 
     }
 
-    public static void cadastrarDentista(ArrayList<Medico> medicos, Scanner scanner) {
-        System.out.println("Cadastro de Médico:");
+
+    // criação do método de registro para cadastro dos funcionarios presentes na clinica. Cadastro similar para:
+    // Medico, paciente, dentista e secretário.
+    public static void cadastrarMedico(ArrayList<Medico> medicos, Scanner scanner) {
+        System.out.println("----- CADASTRO DE MÉDICO -----");
 
         System.out.print("CPF: ");
         String cpf = scanner.next();
@@ -38,25 +41,30 @@ public class Medico extends Funcionario {
         System.out.print("Idade: ");
         int idade = scanner.nextInt();
 
-        System.out.print("Identificação: ");
+        System.out.print("Identificação(CRM): ");
         int id = scanner.nextInt();
 
-        System.out.print("Identificação: ");
+        // limpar buffer
+        scanner.nextLine();
+
+        System.out.print("Especialidade: ");
         String especialidade = scanner.nextLine();
 
         Medico medico = new Medico(nome, cpf, telefone, idade, id, especialidade);
+        medicos.add(medico);
 
         System.out.println("Dentista cadastrado com sucesso!\n");
     }
     public static void listarMedico(ArrayList<Medico> medicos) {
         if (medicos.isEmpty()) {
-            System.out.println("Não há dentistas cadastrados.");
+            System.out.println("Não há médicos cadastrados.");
         } else {
             System.out.println("----- MÉDICO -----");
             for (Medico medico : medicos) {
                 System.out.println("Nome: " + medico.getNome());
                 System.out.println("CPF: " + medico.getCpf());
                 System.out.println("Idade: " + medico.getIdade());
+                System.out.println("Telefone:" +medico.getTelefone());
                 System.out.println("Identificação: " + medico.getId());
                 System.out.println("Especialidade: " + medico.getEspecialidade());
                 System.out.println("-----------------------------");

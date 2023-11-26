@@ -15,7 +15,7 @@ public class Dentista extends Funcionario{
     }
 
     public static void cadastrarDentista(ArrayList<Dentista> dentistas,Scanner scanner) {
-        System.out.println("Cadastro de Dentista:");
+        System.out.println("----- CADASTRO DE DENTISTA -----");
 
         System.out.print("CPF: ");
         String cpf = scanner.next();
@@ -29,18 +29,21 @@ public class Dentista extends Funcionario{
         System.out.print("Idade: ");
         int idade = scanner.nextInt();
 
-        System.out.print("Identificação: ");
+        System.out.print("Identificação(CRO): ");
         int id = scanner.nextInt();
+
+        scanner.nextLine();
 
         System.out.print("Especialidade: ");
         String especialidade = scanner.nextLine();
 
         Dentista dentista = new Dentista(nome, cpf, telefone, idade, id, especialidade);
-        dentista.setEspecialidade(especialidade);
+        dentistas.add(dentista);
 
         System.out.println("Dentista cadastrado com sucesso!\n");
     }
 
+    // Metodo responsável por fazer o listamentos de todos dentistas presentes. Segue mesma lógica pra paciente e médico
     public static void listarDentista(ArrayList<Dentista> dentistas) {
         if (dentistas.isEmpty()) {
             System.out.println("Não há dentistas cadastrados.");
@@ -50,6 +53,7 @@ public class Dentista extends Funcionario{
                 System.out.println("Nome: " + dentista.getNome());
                 System.out.println("CPF: " + dentista.getCpf());
                 System.out.println("Idade: " + dentista.getIdade());
+                System.out.println("Telefone:" +dentista.getTelefone());
                 System.out.println("Identificação: " + dentista.getId());
                 System.out.println("Especialidade: " + dentista.getEspecialidade());
                 System.out.println("-----------------------------");

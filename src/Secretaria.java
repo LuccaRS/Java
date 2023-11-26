@@ -1,16 +1,15 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Secretaria extends Funcionario {
+public class Secretaria extends Funcionario implements Consulta{
 
     // Secretaria, id = sec
-
     public Secretaria(String cpf, String nome, String telefone, int idade, int id, String especialidade) {
         super(cpf, nome, telefone, idade, id, especialidade);
     }
 
     public static void cadastrarSecretaria(ArrayList<Secretaria> secretarias, Scanner scanner) {
-        System.out.println("Cadastro de Médico:");
+        System.out.println("----- CADASTRO DE SECRETÁIOS -----");
 
         System.out.print("CPF: ");
         String cpf = scanner.next();
@@ -27,17 +26,42 @@ public class Secretaria extends Funcionario {
         System.out.print("Identificação: ");
         int id = scanner.nextInt();
 
-        System.out.print("Identificação: ");
+        scanner.nextLine();
+
+        System.out.print("Especialidade: ");
         String especialidade = scanner.nextLine();
 
-        Medico medico = new Medico(nome, cpf, telefone, idade, id, especialidade);
+        Secretaria secretaria = new Secretaria(nome, cpf, telefone, idade, id, especialidade);
+        secretarias.add(secretaria);
 
-        System.out.println("Dentista cadastrado com sucesso!\n");
+        System.out.println("Paciente cadastrado com sucesso!\n");
     }
 
     @Override
     public void realizarFuncao() {
-        System.out.println("A secretária está marcando a consulta!");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("---- MARCAR CONSULTA -----");
+        System.out.println("(1) Marcar consulta com médico");
+        System.out.println("(2) Marcar consulta com dentista");
 
+        // opcao = qual profissional da consulta
+        int opcao = scanner.nextInt();
+
+        System.out.println("Qual data deseja marcar a consulta");
+        String data = scanner.next();
+
+        System.out.println("Qual horário");
+        String horario = scanner.next();
+
+        System.out.println("Agradecemos seu contato. Consulta agendada com sucesso!\n");
+
+        calcularConsulta(opcao,data,horario);
+
+    }
+
+    @Override
+    public double calcularConsulta(int opcao, String data, String horario) {
+
+        return 0;
     }
 }

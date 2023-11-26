@@ -8,12 +8,14 @@ public class Paciente {
     private String cpf;
     private String email;
     private int idade;
+    private String telefone;
 
-    public Paciente(String nome, String cpf, String email, int idade) {
+    public Paciente(String nome, String cpf, String email, int idade, String telefone) {
         this.nome = nome;
         this.cpf = cpf;
         this.email = email;
         this.idade = idade;
+        this.telefone = telefone;
     }
 
 
@@ -21,36 +23,25 @@ public class Paciente {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public String getCpf() {
         return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
     }
 
     public String getEmail() {
         return email;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
 
     public int getIdade() {
         return idade;
     }
 
-    public void setIdade(int idade) {
-        this.idade = idade;
+    public String getTelefone() {
+        return telefone;
     }
 
-    public static void cadastrarPaciente(ArrayList<Paciente> pacientes,Scanner scanner) {
-        System.out.println("Cadastro de Dentista:");
+    public static void cadastrarPaciente(ArrayList<Paciente> pacientes, Scanner scanner) {
+        System.out.println("----- CADASTRO DE PACIENTE -----");
 
         System.out.print("CPF: ");
         String cpf = scanner.next();
@@ -64,16 +55,19 @@ public class Paciente {
         System.out.print("Idade: ");
         int idade = scanner.nextInt();
 
-        Paciente paciente = new Paciente(nome, cpf, telefone, idade);
+        scanner.nextLine();
+
+        System.out.print("E-mail: ");
+        String email = scanner.next();
+
+        Paciente paciente = new Paciente(nome, cpf, email, idade, telefone);
         pacientes.add(paciente);
 
         System.out.println("Paciente cadastrado com sucesso!\n");
     }
-
-
     public static void listarPacientes(ArrayList<Paciente> pacientes) {
         if (pacientes.isEmpty()) {
-            System.out.println("Não há dentistas cadastrados.");
+            System.out.println("Não há pacientes cadastrados.");
         } else {
             System.out.println("----- PACIENTE -----");
             for ( Paciente paciente : pacientes) {
@@ -81,6 +75,7 @@ public class Paciente {
                 System.out.println("CPF: " + paciente.getCpf());
                 System.out.println("Idade: " + paciente.getIdade());
                 System.out.println("E-mail : " + paciente.getEmail());
+                System.out.println("Telefone : " + paciente.getTelefone());
                 System.out.println("-----------------------------");
             }
         }

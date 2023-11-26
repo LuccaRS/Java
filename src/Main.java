@@ -16,6 +16,8 @@ public class Main {
         boolean manter  = true;
         int i = 0;
 
+        // criando um Menu para o funcionamento de tudo possível da clinica
+        // Inclui cadastros, listamentos e marcar consulta
         while (manter) {
             System.out.println("----- CLINICA BEM SORRIR COM SAÚDE -----");
             System.out.println("1 -> Cadastrar Paciente");
@@ -35,34 +37,37 @@ public class Main {
             switch (op) {
                 case 1:
                     Paciente.cadastrarPaciente(pacientes,scanner);
-
-
                     break;
+
                 case 2:
                    Dentista.cadastrarDentista(dentistas,scanner);
+                    break;
 
-                    break;
                 case 3:
-                    Medico.cadastrarDentista(medicos,scanner);
+                    Medico.cadastrarMedico(medicos,scanner);
                     break;
+
                 case 4:
                     Secretaria.cadastrarSecretaria(secretarias,scanner);
                     break;
+
                 case 5:
 
                     break;
                 case 6:
                     Paciente.listarPacientes(pacientes);
                     break;
+
                 case 7:
                     Dentista.listarDentista(dentistas);
-
                     break;
+
                 case 8:
                     Medico.listarMedico(medicos);
                     break;
+
                 case 9:
-                    // saída do progra
+                    // saída do programa
                     System.out.println("Saindo do programa...");
                     manter = false;
                 default:
