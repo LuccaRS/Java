@@ -6,6 +6,8 @@ public abstract class Funcionario {
     private String telefone;
     private int idade;
 
+    private String especialidade;
+
     // id = CRM, CRO de médicos e dentistas
     private int id;
 
@@ -13,7 +15,7 @@ public abstract class Funcionario {
         return cpf;
     }
 
-    public void setCpf(String cpf) {
+    public void setCpf() {
         this.cpf = cpf;
     }
 
@@ -49,13 +51,22 @@ public abstract class Funcionario {
         this.id = id;
     }
 
+    public String getEspecialidade() {
+        return especialidade;
+    }
+
+    public void setEspecialidade(String especialidade) {
+        this.especialidade = especialidade;
+    }
+
     // Construtor de novo funcionario
-    public Funcionario(String cpf, String nome, String telefone, int idade, int id) {
+    public Funcionario(String cpf, String nome, String telefone, int idade, int id, String especialidade) {
         this.cpf = cpf;
         this.nome = nome;
         this.telefone = telefone;
         this.idade = idade;
         this.id = id;
+        this.especialidade = especialidade;
     }
 
     public abstract void realizarFuncao();
