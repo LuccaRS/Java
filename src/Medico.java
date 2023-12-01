@@ -14,19 +14,17 @@ public class Medico extends Funcionario {
         return especialidade;
     }
 
-    public void setEspecialidade(String especialidade) {
-        this.especialidade = especialidade;
-    }
 
     @Override
     public void realizarFuncao() {
+        System.out.println("o médico está em consulta agora!");
 
     }
 
 
     // criação do método de registro para cadastro dos funcionarios presentes na clinica. Cadastro similar para:
     // Medico, paciente, dentista e secretário.
-    public static void cadastrarMedico(ArrayList<Medico> medicos, Scanner scanner) {
+    public static void cadastrarMedico(ArrayList<Medico> medicos, Scanner scanner) throws Exceptions {
         System.out.println("----- CADASTRO DE MÉDICO -----");
 
         System.out.print("CPF: ");
@@ -41,8 +39,18 @@ public class Medico extends Funcionario {
         System.out.print("Idade: ");
         int idade = scanner.nextInt();
 
+        // Fazendo analise de dados inteiros
+        if(idade <= 0 || idade >= 130){
+            throw new Exceptions("Idade inválido!");
+        }
+
         System.out.print("Identificação(CRM): ");
         int id = scanner.nextInt();
+
+        // Fazendo analise de dados inteiros
+        if(id <= 0){
+            throw new Exceptions("Número inválido!");
+        }
 
         // limpar buffer
         scanner.nextLine();

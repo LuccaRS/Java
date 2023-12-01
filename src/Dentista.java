@@ -14,7 +14,7 @@ public class Dentista extends Funcionario{
         System.out.println("O dentista está em consulta nesse momento!");
     }
 
-    public static void cadastrarDentista(ArrayList<Dentista> dentistas,Scanner scanner) {
+    public static void cadastrarDentista(ArrayList<Dentista> dentistas,Scanner scanner) throws Exceptions {
         System.out.println("----- CADASTRO DE DENTISTA -----");
 
         System.out.print("CPF: ");
@@ -28,9 +28,18 @@ public class Dentista extends Funcionario{
 
         System.out.print("Idade: ");
         int idade = scanner.nextInt();
+        // Fazendo analise de dados inteiros
+        if(idade <= 0 || idade >= 130){
+            throw new Exceptions("Idade inválido!");
+        }
 
         System.out.print("Identificação(CRO): ");
         int id = scanner.nextInt();
+
+        // Fazendo analise de dados inteiros
+        if(id <= 0){
+            throw new Exceptions("Idade inválido!");
+        }
 
         scanner.nextLine();
 

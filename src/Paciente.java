@@ -40,7 +40,7 @@ public class Paciente {
         return telefone;
     }
 
-    public static void cadastrarPaciente(ArrayList<Paciente> pacientes, Scanner scanner) {
+    public static void cadastrarPaciente(ArrayList<Paciente> pacientes, Scanner scanner) throws Exceptions {
         System.out.println("----- CADASTRO DE PACIENTE -----");
 
         System.out.print("CPF: ");
@@ -54,6 +54,11 @@ public class Paciente {
 
         System.out.print("Idade: ");
         int idade = scanner.nextInt();
+
+        // Fazendo analise de dados inteiros
+        if(idade <= 0 || idade >= 130){
+            throw new Exceptions("Idade inválido!");
+        }
 
         scanner.nextLine();
 

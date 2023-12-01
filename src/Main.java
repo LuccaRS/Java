@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exceptions {
 
         // Criacao dos objetos presentes no consultorio
 
@@ -52,7 +52,7 @@ public class Main {
                     break;
 
                 case 5:
-
+                    Secretaria.marcarConsulta();
                     break;
                 case 6:
                     Paciente.listarPacientes(pacientes);

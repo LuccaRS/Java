@@ -1,14 +1,14 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Secretaria extends Funcionario implements Consulta{
+public class Secretaria extends Funcionario{
 
     // Secretaria, id = sec
     public Secretaria(String cpf, String nome, String telefone, int idade, int id, String especialidade) {
         super(cpf, nome, telefone, idade, id, especialidade);
     }
 
-    public static void cadastrarSecretaria(ArrayList<Secretaria> secretarias, Scanner scanner) {
+    public static void cadastrarSecretaria(ArrayList<Secretaria> secretarias, Scanner scanner) throws Exceptions {
         System.out.println("----- CADASTRO DE SECRETÁIOS -----");
 
         System.out.print("CPF: ");
@@ -23,8 +23,19 @@ public class Secretaria extends Funcionario implements Consulta{
         System.out.print("Idade: ");
         int idade = scanner.nextInt();
 
+        // Fazendo analise de dados inteiros
+        if(idade <= 0 || idade >= 130){
+            throw new Exceptions("Idade inválido!");
+        }
+
         System.out.print("Identificação: ");
         int id = scanner.nextInt();
+
+        // Fazendo analise de dados inteiros
+        if(id <= 0){
+            throw new Exceptions("Identificação inválido!");
+        }
+
 
         scanner.nextLine();
 
@@ -37,9 +48,8 @@ public class Secretaria extends Funcionario implements Consulta{
         System.out.println("Paciente cadastrado com sucesso!\n");
     }
 
-    @Override
-    public void realizarFuncao() {
-        Scanner scanner = new Scanner(System.in);
+    public static void marcarConsulta() {
+       Scanner scanner = new Scanner(System.in);
         System.out.println("---- MARCAR CONSULTA -----");
         System.out.println("(1) Marcar consulta com médico");
         System.out.println("(2) Marcar consulta com dentista");
@@ -56,12 +66,16 @@ public class Secretaria extends Funcionario implements Consulta{
         System.out.println("Agradecemos seu contato. Consulta agendada com sucesso!\n");
 
         calcularConsulta(opcao,data,horario);
-
     }
 
     @Override
-    public double calcularConsulta(int opcao, String data, String horario) {
+    public void realizarFuncao() {
+        System.out.println("A secretária está trabalhando agora. Aguarde um momento!");
 
-        return 0;
+    }
+
+    public static double calcularConsulta(int opcao, String data, String horario) {
+
+        return 250;
     }
 }

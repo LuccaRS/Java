@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f72fe98c-da58-4ba4-bdab-daa90888a77b" name="Changes" comment="ajustes a mais de cadastros, finalizar o restante">
+    <list default="true" id="f72fe98c-da58-4ba4-bdab-daa90888a77b" name="Changes" comment="mais novas implementaçoes, reta final com metodos da Secretaria para ajustar">
+      <change afterPath="$PROJECT_DIR$/src/Exceptions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Consulta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Consulta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Consulta.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dentista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dentista.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funcionario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
@@ -113,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701023611007</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="mais novas implementaçoes, reta final com metodos da Secretaria para ajustar">
+      <created>1701040665250</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1701040665250</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -133,6 +141,7 @@
     <MESSAGE value="outras implementações de listar dentista" />
     <MESSAGE value="finalmente conseguido implementara lógico de cadastro com array list" />
     <MESSAGE value="ajustes a mais de cadastros, finalizar o restante" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajustes a mais de cadastros, finalizar o restante" />
+    <MESSAGE value="mais novas implementaçoes, reta final com metodos da Secretaria para ajustar" />
+    <option name="LAST_COMMIT_MESSAGE" value="mais novas implementaçoes, reta final com metodos da Secretaria para ajustar" />
   </component>
 </project>

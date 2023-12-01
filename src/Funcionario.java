@@ -40,10 +40,6 @@ public abstract class Funcionario {
         return especialidade;
     }
 
-    public void setEspecialidade(String especialidade) {
-        this.especialidade = especialidade;
-    }
-
     // Construtor de novo funcionario
     public Funcionario(String cpf, String nome, String telefone, int idade, int id, String especialidade) {
         this.cpf = cpf;
@@ -54,5 +50,7 @@ public abstract class Funcionario {
         this.especialidade = especialidade;
     }
 
-    public abstract void realizarFuncao();
+    public void realizarFuncao() {
+
+    }
 }
